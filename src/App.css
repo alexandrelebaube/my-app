@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  margin: 0 150px;
+}
+.nav-menus {
+  display: flex;
+  list-style-type: none;
+}
+.nav-menus a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menus li {
+  padding-left: 40px;
+}
+.header-section {
+  display: flex;
+  height: 85vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.header-img {
+  width: 50%;
+}
+.header-text {
+  width: 50%;
+  margin-right: 180px;
+  margin-left: 100px;
+}
+.header-text h2 {
+  font-size: 50px;
+  font-family: Lufga-bold;
+}
+hr {
+  background-color: #a851f1;
+  border: transparent;
+  height: 5px;
+  width: 300px;
+  border-radius: 30px;
+}
+.header-text p {
+  margin: 20px 0;
+  font-family: Lufga-regular;
+}
+button {
+  background-image: linear-gradient(to right, #5bc5d6, #6077ec, #a851f1);
+  padding: 13px 40px;
   color: white;
+  border: transparent;
+  font-family: Lufga-regular;
+  font-size: 15px;
+  clip-path: polygon(10% 0%, 100% 0, 100% 70%, 90% 100%, 0 100%, 0% 30%);
+  border-radius: 4px;
 }
-
-.App-link {
-  color: #61dafb;
+.stars {
+  position: absolute;
+  right: 230px;
+  bottom: 310px;
+  height: 70px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.down-arrow {
+  position: absolute;
+  height: 50px;
+  right: 220px;
+}
+.artwork-section {
+  height: 120vh;
+}
+.artwork-heading {
+  font-size: 45px;
+  text-align: center;
+}
+.artwork-text {
+  background: -webkit-linear-gradient(left, #5bc5d6, #6077ec, #a851f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.card-1 {
+  background-image: url("../public/images/card-img-1.svg");
+  height: 330px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  width: 300px;
+  background-position: center;
+  clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
+  border-radius: 4px;
+}
+.card-2 {
+  background-image: url("../public/images/card-img-2.svg");
+  height: 330px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  width: 300px;
+  background-position: center;
+  clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
+  border-radius: 4px;
+}
+.card-3 {
+  background-image: url("../public/images/card-img-3.svg");
+  height: 330px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  width: 300px;
+  background-position: center;
+  clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
+  border-radius: 4px;
+}
+.card-4 {
+  background-image: url("../public/images/card-img-4.svg");
+  height: 330px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  width: 300px;
+  background-position: center;
+  clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
+  border-radius: 10px;
+}
+.card-text {
+  font-size: 13px;
+  padding-bottom: 5px;
+  height: 8vh;
+  backdrop-filter: blur(5px);
+  width: 85%;
+}
+.NFT-life-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px 30px;
+}
+.NFT-life-text h2 {
+  font-size: 45px;
+}
+.NFT-life-text p {
+  margin: 40px 0;
+  padding-right: 100px;
+}
+.NFT-life-text {
+  margin-left: 120px;
+}
+.NFT-life-span {
+  background: -webkit-linear-gradient(left, #5bc5d6, #6077ec, #a851f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.NFT-life-img img {
+  height: 400px;
+}
+.NFT-life-img {
+  margin: auto;
+}
+@media only screen and (max-width: 1200px) {
+  .header-text {
+    margin-right: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .NFT-life-container {
+    grid-template-columns: auto;
   }
+  .NFT-life-img img {
+    height: 290px;
+  }
+  .NFT-life-container {
+    margin: auto;
+    width: 90%;
+  }
+  .NFT-life-text {
+    margin-left: 0;
+  }
+  button {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .NFT-life-text p {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  nav {
+    justify-content: center;
+  }
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+  }
+  .header-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 90%;
+    margin: auto;
+  }
+  .header-img {
+    width: 100%;
+    padding-left: 100px;
+  }
+  .header-img img {
+    width: 100%;
+  }
+  .nav-menus {
+    display: none;
+  }
+  .header-text h2 {
+    font-size: 35px;
+  }
+  .down-arrow {
+    right: 20px;
+  }
+  .stars {
+    right: 20px;
+    bottom: 197px;
+  }
+  .artwork-section {
+    margin: 60px 0;
+  }
+  .artwork-heading {
+    font-size: 35px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+.about-para {
+  font-family: Lufga-regular;
+}
+.footer-button {
+  background-image: linear-gradient(to right, #5bc5d6, #6077ec, #a851f1);
+  padding: 13px 40px;
+  color: white;
+  border: transparent;
+  font-family: Lufga-regular;
+  font-size: 15px;
+  clip-path: polygon(10% 0%, 100% 0, 100% 70%, 90% 100%, 0 100%, 0% 30%);
+  border-radius: 4px;
 }
